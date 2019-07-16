@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import TableHead from '../../components/Table/TableHead';
 import { render } from 'enzyme';
 

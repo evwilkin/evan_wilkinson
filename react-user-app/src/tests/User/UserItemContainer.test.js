@@ -1,13 +1,13 @@
 import React from 'react';
-import TableData from '../../components/Table/TableData';
+import UserItemContainer from '../../components/User/UserItemContainer';
 import { shallow } from 'enzyme';
 
-describe('<TableData />', () => {
+describe('<UserItemContainer />', () => {
   it('renders children when passed in', () => {
     const wrapper = shallow((
-      <TableData>
+      <UserItemContainer>
         <div className="unique" />
-      </TableData>
+      </UserItemContainer>
     ));
     expect(wrapper.contains(<div className="unique" />)).toBe(true);
   });

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Table from '../../components/Table/Table';
 import TableHead from '../../components/Table/TableHead';
 import TableBody from '../../components/Table/TableBody';

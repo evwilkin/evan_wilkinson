@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import TableRow from '../../components/Table/TableRow';
 import TableData from '../../components/Table/TableData';
 import Email from '../../components/Table/Email';

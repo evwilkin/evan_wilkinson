@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Email from '../../components/Table/Email';
 import { shallow } from 'enzyme';
 
