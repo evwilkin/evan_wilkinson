@@ -1,11 +1,11 @@
 import React from 'react';
-import UserRow from './UserRow';
+import TableRow from './TableRow';
 import PropTypes from 'prop-types';
 
 const TableBody = props => (
   <tbody>
     {props.users.map(user => {
-      return <UserRow user={user} key={user.id} />
+      return <TableRow user={user} key={user.id} />
     })}
   </tbody>
 );

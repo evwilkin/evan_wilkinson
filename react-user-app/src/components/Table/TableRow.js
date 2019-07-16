@@ -1,12 +1,12 @@
 import React from 'react';
 import TableData from './TableData';
-import UserEmail from './UserEmail';
-import UserAddress from './UserAddress';
+import Email from './Email';
+import Address from './Address';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
-const UserRow = props => {
+const TableRow = props => {
   const { id, name, username, email, address } = props.user;
   return (
     <tr>
@@ -19,17 +19,17 @@ const UserRow = props => {
         {username}
       </TableData>
       <TableData>
-        <UserEmail email={email} />
+        <Email email={email} />
       </TableData>
       <TableData>
-        <UserAddress address={address} />
+        <Address address={address} />
       </TableData>
     </tr>
   );
 }
 
-UserRow.propTypes = {
+TableRow.propTypes = {
   user: PropTypes.object
 }
 
-export default UserRow;
+export default TableRow;

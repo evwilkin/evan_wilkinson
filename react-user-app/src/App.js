@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserTable from './components/Table/UserTable';
+import Table from './components/Table/Table';
 import ShowUser from './components/User/ShowUser';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -33,7 +33,7 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={props => <UserTable {...props} users={this.state.users}/>}
+              render={props => <Table {...props} users={this.state.users}/>}
             />
             <Route
               path="/:id"

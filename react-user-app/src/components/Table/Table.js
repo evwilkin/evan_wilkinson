@@ -1,18 +1,18 @@
 import React from 'react';
-import './UserTable.css';
+import './Table.css';
 import TableHead from './TableHead';
 import TableBody from './TableBody';
 import PropTypes from 'prop-types';
 
- const UserTable = props => (
+ const Table = props => (
   <table>
     <TableHead />
     <TableBody users={props.users} />
   </table>
 );
 
-UserTable.propTypes = {
+Table.propTypes = {
   users: PropTypes.array
 }
 
-export default UserTable;
+export default Table;
