@@ -1,11 +1,13 @@
 async function remoteMathService(cb) {
   var one, two;
-  await callOneService(function(err, num) {
-    one = num;
-  });
-  await callTwoService(function(err, num) {
-    two = num;
-  });
+  await Promise.all([
+    callOneService(function(err, num) {
+      one = num;
+    }),
+    callTwoService(function(err, num) {
+      two = num;
+    })
+  ]);
   return cb(undefined, one + two);
 }
 
