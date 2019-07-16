@@ -12,6 +12,8 @@ Originally within `remoteMathService` I prefaced both `callOneService` and `call
 
 This does work and returns the correct answer, but has one drawback.  As mentioned, `await` halts execution within `remoteMathService` each time it's called.  In this case, `callOneService` and `callTwoService` do not rely on each other, so there was no need to call `await` two separate times.
 
+## Optimized Solution
+
 Instead, I used a combination of one `await` with a `Promise.all` call which will wait until both functions are complete but still allow them to execute at the same time.  While the result is ultimately the same, this approach reduces run time by 1000ms from 2.5s (pause at `callOneService` for 1s, then pause at `callTwoService` for 1.5s) to 1.5s (run both `callOneService` and `callTwoService` in parallel).
 
 The result is that `callOneService` sets the variable `one` equal to `1`, `callTwoService` sets the variable `two` equal to `2`, and then the callback returned by `remoteMathService` adds them together and returns `3`.
