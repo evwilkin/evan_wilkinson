@@ -26,4 +26,13 @@ describe('<ToggleWrapper />', () => {
   it('renders one `<UserItemContainer />`', () => {
     expect(component.find(UserItemContainer)).toHaveLength(1);
   });
+
+  it('changes isExpanded state value with toggleVisibility()', () => {
+    const instance = component.instance();
+    expect(component.state('isExpanded')).toBe(false);
+    instance.toggleVisibility();
+    expect(component.state('isExpanded')).toBe(true);
+    instance.toggleVisibility();
+    expect(component.state('isExpanded')).toBe(false);
+  });
 });
