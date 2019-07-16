@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+.App {
+  font-family: 'Overpass', sans-serif;
+}
+
+.AppContainer {
+  max-width: 560px;
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 0 10px 5px -5px #bbb;
+}

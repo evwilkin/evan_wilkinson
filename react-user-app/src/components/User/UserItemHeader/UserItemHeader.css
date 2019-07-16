@@ -1,0 +1,19 @@
+.list-group-item-header {
+  cursor: default;
+}
+
+.list-view-pf-expand,
+.list-view-pf-expand ~ .list-view-pf-main-info {
+  cursor: pointer;
+}
+
+.list-group-item-heading {
+  padding-top: 4px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .list-group-item-heading {
+    min-width: 30%;
+  }
+}

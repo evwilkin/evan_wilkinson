@@ -1,0 +1,35 @@
+.content-container {
+  text-align: left;
+  padding: 20px;
+}
+
+.content-container .panelHeader {
+  margin: 0;
+}
+
+.content-container .panelBody {
+  margin: 20px 0;
+}
+
+.content-container .gridrow {
+  display: flex;
+  margin: 20px 0;
+}
+
+.content-container .gridrow .gridkey {
+  width: 30%;
+}
+
+.content-container .gridrow .gridvalue {
+  color: #bbb;
+}
+
+.content-container .gridrow .gridvalue.active {
+  border-radius: 5px;
+  color: #fff;
+}
+
+.content-container .gridrow .gridvalue.active {
+  background: green;
+  padding: 0 5px;
+}
